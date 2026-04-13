@@ -1,38 +1,23 @@
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Header from './components/Header.tsx'
-import HeroSlider from './components/HeroSlider.tsx'
-import HowWeDoIt from './components/HowWeDoIt.tsx'
-import Services from './components/WhatWeDo.tsx'
-import OurWork from './components/OurWork.tsx'
-import AboutUs from './components/AboutUs.tsx'
-import Contact from './components/Contact.tsx'
 import Footer from './components/Footer.tsx'
+import Home from './pages/Home.tsx'
+import Work from './pages/Work.tsx'
+import ContactPage from './pages/Contact.tsx'
 
 function App() {
+  const basePath = '/the-arqiteqt-studio'
+
   return (
-    <>
+    <Router basename={basePath}>
       <Header />
-      <main>
-        <section id="home">
-          <HeroSlider />
-        </section>
-        <section id="approach">
-          <HowWeDoIt />
-        </section>
-        <section id="services">
-          <Services />
-        </section>
-        <section id="work">
-          <OurWork />
-        </section>
-        <section id="about">
-          <AboutUs />
-        </section>
-        <section id="contact">
-          <Contact />
-        </section>
-      </main>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/work" element={<Work />} />
+        <Route path="/contact" element={<ContactPage />} />
+      </Routes>
       <Footer />
-    </>
+    </Router>
   )
 }
 

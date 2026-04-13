@@ -9,7 +9,7 @@ export default function AboutUs() {
           <div className="about__left fade-in">
             <span className="label">Who We Are</span>
             <div className="divider" />
-            <h2 className="about__title">About Us</h2>
+            <h2 className="about__title">Our Story</h2>
             <p className="about__lead">
               The Arqiteqt is a studio of architects, interior designers, and project managers united by a singular belief: that great design enriches every aspect of life.
             </p>
@@ -33,7 +33,7 @@ export default function AboutUs() {
                 <circle cx="12" cy="12" r="5"/>
                 <circle cx="17.5" cy="6.5" r="0.6" fill="currentColor"/>
               </svg>
-              <span>@thearqiteqt</span>
+              <span>@The.Arqiteqt</span>
             </a>
           </div>
 

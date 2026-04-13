@@ -15,8 +15,8 @@ const SERVICES = [
   },
   {
     number: '03',
-    title: 'Build & Project Management',
-    body: 'We manage the entire construction process — contractor selection, programme management, quality control, and cost reporting — so your project is delivered on time and on budget.',
+    title: 'Exterior Design',
+    body: 'We design exceptional outdoor spaces — gardens, terraces, and landscapes that extend your home into nature. Thoughtful integration of architecture and environment, crafted for beauty and functionality.',
     image: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=80',
   },
   {

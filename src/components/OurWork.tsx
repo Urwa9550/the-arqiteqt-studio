@@ -1,16 +1,18 @@
 import { useState } from 'react'
 import './OurWork.css'
+import Project1_01 from '../assets/images/Project1_design01.png'
+import Project1_02 from '../assets/images/Project1_design02.png'
 
 const PROJECTS = [
-  { id: 1, title: 'Belgravia Townhouse', category: 'Architecture', image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=900&q=80' },
+  { id: 1, title: 'Belgravia Townhouse', category: 'Architecture', image: Project1_01 },
   { id: 2, title: 'Mayfair Penthouse', category: 'Interior Design', image: 'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=900&q=80' },
   { id: 3, title: 'Chelsea Residence', category: 'Concept to Completion', image: 'https://pplx-res.cloudinary.com/image/upload/pplx_search_images/0945b05693f13a795b7c7d40144352e7508a6da0.jpg?w=900&q=80' },
-  { id: 4, title: 'Kensington Villa', category: 'Architecture', image: 'https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=900&q=80' },
+  { id: 4, title: 'Kensington Villa', category: 'Architecture', image: Project1_02 },
   { id: 5, title: 'Notting Hill Mews', category: 'Interior Design', image: 'https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?w=900&q=80' },
-  { id: 6, title: 'Hampstead Heath Retreat', category: 'Build & Project Management', image: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=900&q=80' },
+  { id: 6, title: 'Hampstead Heath Retreat', category: 'Exterior Design', image: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=900&q=80' },
 ]
 
-const CATEGORIES = ['All', 'Architecture', 'Interior Design', 'Build & Project Management', 'Concept to Completion']
+const CATEGORIES = ['All', 'Architecture', 'Interior Design', 'Exterior Design', 'Concept to Completion']
 
 export default function OurWork() {
   const [active, setActive] = useState('All')

@@ -1,17 +1,17 @@
 import { useState, useEffect } from 'react'
+import { Link, useLocation } from 'react-router-dom'
 import './Header.css'
 
 const NAV_LINKS = [
-  { label: 'Approach', href: '#approach' },
-  { label: 'Services', href: '#services' },
-  { label: 'Our Work', href: '#work' },
-  { label: 'About', href: '#about' },
-  { label: 'Contact', href: '#contact' },
+  { label: 'Home', path: '/' },
+  { label: 'Work', path: '/work' },
+  { label: 'Contact', path: '/contact' },
 ]
 
 export default function Header() {
   const [scrolled, setScrolled] = useState(false)
   const [menuOpen, setMenuOpen] = useState(false)
+  const location = useLocation()
 
   useEffect(() => {
     const handler = () => setScrolled(window.scrollY > 60)
@@ -23,7 +23,7 @@ export default function Header() {
     <header className={`header${scrolled ? ' header--scrolled' : ''}`} role="banner">
       <div className="header__inner container">
         {/* SVG Logo Mark */}
-        <a href="#home" className="header__logo" aria-label="The Arqiteqt – Home">
+        <Link to="/" className="header__logo" aria-label="The Arqiteqt – Home">
           <svg width="36" height="36" viewBox="0 0 36 36" fill="none" aria-hidden="true">
             <path d="M18 3 L33 33 H3 Z" stroke="currentColor" strokeWidth="1.5" fill="none"/>
             <line x1="18" y1="3" x2="18" y2="33" stroke="currentColor" strokeWidth="0.8" opacity="0.4"/>
@@ -33,14 +33,19 @@ export default function Header() {
             <span className="header__name">The Arqiteqt</span>
             <span className="header__caption">The Architectural Studio</span>
           </span>
-        </a>
+        </Link>
 
         {/* Desktop Nav */}
         <nav className="header__nav" role="navigation" aria-label="Main navigation">
           <ul role="list">
             {NAV_LINKS.map(link => (
-              <li key={link.href}>
-                <a href={link.href} className="header__link">{link.label}</a>
+              <li key={link.path}>
+                <Link
+                  to={link.path}
+                  className={`header__link ${location.pathname === link.path ? 'header__link--active' : ''}`}
+                >
+                  {link.label}
+                </Link>
               </li>
             ))}
           </ul>
@@ -62,10 +67,14 @@ export default function Header() {
         <nav>
           <ul role="list">
             {NAV_LINKS.map(link => (
-              <li key={link.href}>
-                <a href={link.href} className="header__drawer-link" onClick={() => setMenuOpen(false)}>
+              <li key={link.path}>
+                <Link
+                  to={link.path}
+                  className={`header__drawer-link ${location.pathname === link.path ? 'header__drawer-link--active' : ''}`}
+                  onClick={() => setMenuOpen(false)}
+                >
                   {link.label}
-                </a>
+                </Link>
               </li>
             ))}
           </ul>

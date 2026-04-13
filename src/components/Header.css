@@ -96,6 +96,14 @@
   transform: scaleX(1);
 }
 
+.header__link--active {
+  color: var(--color-text);
+}
+
+.header__link--active::after {
+  transform: scaleX(1);
+}
+
 /* Burger */
 .header__burger {
   display: none;
@@ -155,6 +163,11 @@
 
 .header__drawer-link:hover {
   color: var(--color-text-muted);
+}
+
+.header__drawer-link--active {
+  color: var(--color-text-muted);
+  font-weight: 500;
 }
 
 @media (max-width: 768px) {

@@ -6,10 +6,8 @@ import Work from './pages/Work.tsx'
 import ContactPage from './pages/Contact.tsx'
 
 function App() {
-  const basePath = '/the-arqiteqt-studio'
-
   return (
-    <Router basename={basePath}>
+    <Router basename="/">
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />

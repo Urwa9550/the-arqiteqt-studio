@@ -1,0 +1,28 @@
+{
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  "env": {
+    "VITE_BASE_PATH": "/the-arqiteqt-studio"
+  },
+  "headers": [
+    {
+      "source": "/the-arqiteqt-studio/assets/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/the-arqiteqt-studio/(.*)",
+      "destination": "/the-arqiteqt-studio/index.html"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}

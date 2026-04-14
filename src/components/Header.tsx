@@ -11,6 +11,7 @@ const NAV_LINKS = [
 export default function Header() {
   const [scrolled, setScrolled] = useState(false)
   const [menuOpen, setMenuOpen] = useState(false)
+  const [isDarkBg, setIsDarkBg] = useState(false)
   const location = useLocation()
 
   useEffect(() => {
@@ -19,8 +20,22 @@ export default function Header() {
     return () => window.removeEventListener('scroll', handler)
   }, [])
 
+  useEffect(() => {
+    const detectDarkBackground = () => {
+      const bgColor = window.getComputedStyle(document.documentElement).backgroundColor
+      const rgb = bgColor.match(/\d+/g)
+      if (rgb) {
+        const brightness = (parseInt(rgb[0]) * 299 + parseInt(rgb[1]) * 587 + parseInt(rgb[2]) * 114) / 1000
+        setIsDarkBg(brightness < 128)
+      }
+    }
+    detectDarkBackground()
+    window.addEventListener('resize', detectDarkBackground)
+    return () => window.removeEventListener('resize', detectDarkBackground)
+  }, [])
+
   return (
-    <header className={`header${scrolled ? ' header--scrolled' : ''}`} role="banner">
+    <header className={`header${scrolled ? ' header--scrolled' : ''}${isDarkBg ? ' header--dark-bg' : ''}`} role="banner">
       <div className="header__inner container">
         {/* SVG Logo Mark */}
         <Link to="/" className="header__logo" aria-label="The Arqiteqt – Home">

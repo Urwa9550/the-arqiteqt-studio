@@ -7,7 +7,7 @@ const SERVICES = [
     number: '01',
     title: 'Architecture',
     body: 'From initial feasibility studies and planning applications through to detailed construction drawings, we manage the full architectural process with precision and creative rigour.',
-    image: 'https://images.unsplash.com/photo-1486325212027-8081e485255e?w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1608303588026-884930af2559?w=800&q=80',
   },
   {
     number: '02',
@@ -19,7 +19,7 @@ const SERVICES = [
     number: '03',
     title: 'Exterior Design',
     body: 'We design exceptional outdoor spaces — gardens, terraces, and landscapes that extend your home into nature. Thoughtful integration of architecture and environment, crafted for beauty and functionality.',
-    image: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800&q=80',
   },
   {
     number: '04',

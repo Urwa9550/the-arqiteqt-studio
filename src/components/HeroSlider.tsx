@@ -4,7 +4,7 @@ import './HeroSlider.css'
 const SLIDES = [
   {
     id: 1,
-    image: 'https://images.unsplash.com/photo-1486325212027-8081e485255e?w=1800&q=85',
+    image: 'https://pplx-res.cloudinary.com/image/upload/pplx_search_images/0945b05693f13a795b7c7d40144352e7508a6da0.jpg?w=1800&q=85',
     caption: 'Architecture',
     headline: 'Spaces Built\nto Last',
   },
@@ -16,7 +16,7 @@ const SLIDES = [
   },
   {
     id: 3,
-    image: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1800&q=85',
+    image: 'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=1800&q=85',
     caption: 'Exterior Design',
     headline: 'Spaces That\nInspire',
   },

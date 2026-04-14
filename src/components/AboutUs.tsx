@@ -22,7 +22,7 @@ export default function AboutUs() {
 
             {/* Instagram link */}
             <a
-              href="https://www.instagram.com"
+              href="https://www.instagram.com/the.arqiteqt.pk"
               target="_blank"
               rel="noopener noreferrer"
               className="about__instagram"

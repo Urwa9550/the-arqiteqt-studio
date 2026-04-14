@@ -1,11 +1,13 @@
 import './WhatWeDo.css'
+import ConceptImg1 from '../assets/images/Project1_design01.png'
+import ConceptImg2 from '../assets/images/Project1_design02.png'
 
 const SERVICES = [
   {
     number: '01',
     title: 'Architecture',
     body: 'From initial feasibility studies and planning applications through to detailed construction drawings, we manage the full architectural process with precision and creative rigour.',
-    image: 'https://images.unsplash.com/photo-1503708928676-1cb796a0891e?w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1486325212027-8081e485255e?w=800&q=80',
   },
   {
     number: '02',
@@ -23,7 +25,7 @@ const SERVICES = [
     number: '04',
     title: 'Concept to Completion',
     body: 'Our end-to-end service removes the complexity of building or renovating. One studio, one point of responsibility, from the first sketch to the final snag list.',
-    image: 'https://images.unsplash.com/photo-1524758631624-e2822e304c36?w=800&q=80',
+    images: [ConceptImg1, ConceptImg2],
   },
 ]
 
@@ -41,15 +43,33 @@ export default function Services() {
           {SERVICES.map(svc => (
             <article key={svc.number} className="svc-card fade-in">
               <div className="svc-card__img-wrap">
-                <img
-                  src={svc.image}
-                  alt={svc.title}
-                  width={800}
-                  height={500}
-                  loading="lazy"
-                  decoding="async"
-                  className="svc-card__img"
-                />
+                {svc.images ? (
+                  <div className="svc-card__img-gallery" style={{ display: 'flex', gap: '8px' }}>
+                    {svc.images.map((img, idx) => (
+                      <img
+                        key={idx}
+                        src={img}
+                        alt={`${svc.title} ${idx + 1}`}
+                        width={390}
+                        height={500}
+                        loading="lazy"
+                        decoding="async"
+                        className="svc-card__img"
+                        style={{ flex: 1, objectFit: 'cover' }}
+                      />
+                    ))}
+                  </div>
+                ) : (
+                  <img
+                    src={svc.image}
+                    alt={svc.title}
+                    width={800}
+                    height={500}
+                    loading="lazy"
+                    decoding="async"
+                    className="svc-card__img"
+                  />
+                )}
               </div>
               <div className="svc-card__body">
                 <span className="svc-card__num">{svc.number}</span>

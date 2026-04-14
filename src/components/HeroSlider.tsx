@@ -4,7 +4,7 @@ import './HeroSlider.css'
 const SLIDES = [
   {
     id: 1,
-    image: 'https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=1800&q=85',
+    image: 'https://images.unsplash.com/photo-1486325212027-8081e485255e?w=1800&q=85',
     caption: 'Architecture',
     headline: 'Spaces Built\nto Last',
   },
@@ -16,15 +16,15 @@ const SLIDES = [
   },
   {
     id: 3,
-    image: 'https://pplx-res.cloudinary.com/image/upload/pplx_search_images/0945b05693f13a795b7c7d40144352e7508a6da0.jpg?w=1800&q=85',
-    caption: 'Project Management',
-    headline: 'Concept to\nCompletion',
+    image: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1800&q=85',
+    caption: 'Exterior Design',
+    headline: 'Spaces That\nInspire',
   },
   {
     id: 4,
-    image: 'https://images.unsplash.com/photo-1505691938895-1758d7feb511?w=1800&q=85',
-    caption: 'Our Work',
-    headline: 'Crafted with\nPrecision',
+    image: 'https://images.unsplash.com/photo-1524758631624-e2822e304c36?w=1800&q=85',
+    caption: 'Concept to Completion',
+    headline: 'End to End\nExcellence',
   },
 ]
 

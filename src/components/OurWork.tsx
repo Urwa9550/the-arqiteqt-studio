@@ -4,12 +4,13 @@ import Project1_01 from '../assets/images/Project1_design01.png'
 import Project1_02 from '../assets/images/Project1_design02.png'
 
 const PROJECTS = [
-  { id: 1, title: 'Belgravia Townhouse', category: 'Architecture', image: Project1_01 },
+  { id: 1, title: 'Belgravia Townhouse', category: 'Concept to Completion', image: Project1_01 },
   { id: 2, title: 'Mayfair Penthouse', category: 'Interior Design', image: 'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=900&q=80' },
   { id: 3, title: 'Chelsea Residence', category: 'Concept to Completion', image: 'https://pplx-res.cloudinary.com/image/upload/pplx_search_images/0945b05693f13a795b7c7d40144352e7508a6da0.jpg?w=900&q=80' },
-  { id: 4, title: 'Kensington Villa', category: 'Architecture', image: Project1_02 },
+  { id: 4, title: 'Kensington Villa', category: 'Concept to Completion', image: Project1_02 },
   { id: 5, title: 'Notting Hill Mews', category: 'Interior Design', image: 'https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?w=900&q=80' },
   { id: 6, title: 'Hampstead Heath Retreat', category: 'Exterior Design', image: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=900&q=80' },
+  { id: 7, title: 'Fitzrovia Residence', category: 'Architecture', image: 'https://images.unsplash.com/photo-1486325212027-8081e485255e?w=900&q=80' },
 ]
 
 const CATEGORIES = ['All', 'Architecture', 'Interior Design', 'Exterior Design', 'Concept to Completion']

@@ -11,6 +11,8 @@ import Exterior2 from '../assets/images/exterior/ext_image_2.jpg'
 import Exterior3 from '../assets/images/exterior/ext_image_3.jpg'
 import Exterior4 from '../assets/images/exterior/ext_image_4.jpeg'
 import Exterior5 from '../assets/images/exterior/ext_image_5.jpg'
+import Concept1 from '../assets/images/concept1.jpg'
+import Concept2 from '../assets/images/concept2.jpg'
 
 const PROJECTS = [
   { id: 1, title: 'Belgravia Townhouse', category: 'Concept to Completion', image: Project1_01 },
@@ -26,6 +28,8 @@ const PROJECTS = [
   { id: 11, title: 'Luxury Lounge Design', category: 'Interior Design', image: Interior4 },
   { id: 12, title: 'Executive Bathroom Suite', category: 'Interior Design', image: Interior5 },
   { id: 13, title: 'Garden Facade Design', category: 'Exterior Design', image: Exterior1 },
+  { id: 14, title: 'Kensington Villa', category: 'Concept to Completion', image: Concept1 },
+  { id: 15, title: 'Kensington Villa', category: 'Concept to Completion', image: Concept2 },
 ]
 
 const CATEGORIES = ['All', 'Architecture', 'Interior Design', 'Exterior Design', 'Concept to Completion']
@@ -68,7 +72,7 @@ export default function OurWork() {
               <div className="work-card__img-wrap">
                 <img
                   src={project.image}
-                  alt={project.title}
+                  alt={project.category}
                   width={900}
                   height={600}
                   loading="lazy"
@@ -76,7 +80,7 @@ export default function OurWork() {
                 />
                 <div className="work-card__overlay">
                   <span className="work-card__cat label">{project.category}</span>
-                  <h3 className="work-card__title">{project.title}</h3>
+                  {/* <h3 className="work-card__title">{project.title}</h3> */}
                 </div>
               </div>
             </article>

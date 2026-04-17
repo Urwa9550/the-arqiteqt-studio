@@ -148,19 +148,23 @@
   width: 44px;
   height: 44px;
   padding: var(--space-2);
+  background: #000000;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
 }
 
 .header__burger span {
   display: block;
   width: 22px;
   height: 1px;
-  background: var(--color-text);
+  background: #ffffff;
   transition: transform var(--transition), opacity var(--transition);
   transform-origin: center;
 }
 
 .header--dark-bg .header__burger span {
-  background: rgb(218, 217, 217);
+  background: #ffffff;
 }
 
 .header__burger.open span:nth-child(1) { transform: translateY(6px) rotate(45deg); }
@@ -171,11 +175,13 @@
 .header__drawer {
   position: fixed;
   inset: 80px 0 0 0;
-  background: var(--color-bg);
+  background: rgba(235, 233, 233, 1);
+  backdrop-filter: blur(10px);
   padding: var(--space-8) var(--space-6);
   transform: translateX(100%);
   transition: transform var(--transition);
   border-top: 1px solid var(--color-divider);
+  height: 40vh;
 }
 
 .header__drawer.open {

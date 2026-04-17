@@ -107,7 +107,7 @@ export default function Contact() {
                 <dt className="label">Email</dt>
                 <dd>
                   <a href="mailto:studio@thearqiteqt.com" className="contact__link">
-                    studio@thearqiteqt.com
+                    sumainnaveedf2017@gmail.com
                   </a>
                 </dd>
               </div>
@@ -115,7 +115,7 @@ export default function Contact() {
                 <dt className="label">Phone</dt>
                 <dd>
                   <a href="tel:+441234567890" className="contact__link">
-                    +44 (0) 123 456 7890
+                    +44 (0) 740 450 9043
                   </a>
                 </dd>
               </div>

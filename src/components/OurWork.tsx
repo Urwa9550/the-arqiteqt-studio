@@ -2,16 +2,30 @@ import { useState } from 'react'
 import './OurWork.css'
 import Project1_01 from '../assets/images/Project1_design01.png'
 import Project1_02 from '../assets/images/Project1_design02.png'
+import Interior1 from '../assets/images/interior/in_image_1.jpg'
+import Interior2 from '../assets/images/interior/in_image_2.png'
+import Interior4 from '../assets/images/interior/in_lounge1.jpg'
+import Interior5 from '../assets/images/interior/in_toilet1.jpg'
+import Exterior1 from '../assets/images/exterior/ext_image_1.jpg'
+import Exterior2 from '../assets/images/exterior/ext_image_2.jpg'
+import Exterior3 from '../assets/images/exterior/ext_image_3.jpg'
+import Exterior4 from '../assets/images/exterior/ext_image_4.jpeg'
+import Exterior5 from '../assets/images/exterior/ext_image_5.jpg'
 
 const PROJECTS = [
   { id: 1, title: 'Belgravia Townhouse', category: 'Concept to Completion', image: Project1_01 },
-  { id: 2, title: 'Mayfair Penthouse', category: 'Interior Design', image: 'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=900&q=80' },
-  { id: 3, title: 'Chelsea Residence', category: 'Exterior Design', image: 'https://pplx-res.cloudinary.com/image/upload/pplx_search_images/0945b05693f13a795b7c7d40144352e7508a6da0.jpg?w=900&q=80' },
+  { id: 2, title: 'Mayfair Penthouse', category: 'Interior Design', image: Interior1 },
+  { id: 3, title: 'Chelsea Residence', category: 'Exterior Design', image: Exterior3 },
   { id: 4, title: 'Kensington Villa', category: 'Concept to Completion', image: Project1_02 },
-  { id: 5, title: 'Notting Hill Mews', category: 'Interior Design', image: 'https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?w=900&q=80' },
-  { id: 6, title: 'Hampstead Heath Retreat', category: 'Exterior Design', image: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=900&q=80' },
-  { id: 7, title: 'Architecture & planning', category: 'Architecture', image: 'https://images.unsplash.com/photo-1608303588026-884930af2559?w=900&q=80' },
-  { id: 8, title: 'Architecture Designing', category: 'Architecture', image: 'https://plus.unsplash.com/premium_photo-1664301098953-a2d275d3a18a?w=900&q=80' },
+  { id: 5, title: 'Contemporary Exterior', category: 'Exterior Design', image: Exterior5  },
+  { id: 6, title: 'Hampstead Heath Retreat', category: 'Exterior Design', image: Exterior2 },
+  { id: 7, title: 'Urban Planning & Design', category: 'Architecture', image: 'https://images.unsplash.com/photo-1608303588026-884930af2559?w=900&q=80' },
+  { id: 8, title: 'Modern Architecture Suite', category: 'Architecture', image: 'https://plus.unsplash.com/premium_photo-1664301098953-a2d275d3a18a?w=900&q=80' },
+  { id: 9, title: 'Contemporary Lounge Space', category: 'Interior Design', image: Interior2 },
+  { id: 10, title: 'Modern Facade Project', category: 'Exterior Design', image: Exterior4  },
+  { id: 11, title: 'Luxury Lounge Design', category: 'Interior Design', image: Interior4 },
+  { id: 12, title: 'Executive Bathroom Suite', category: 'Interior Design', image: Interior5 },
+  { id: 13, title: 'Garden Facade Design', category: 'Exterior Design', image: Exterior1 },
 ]
 
 const CATEGORIES = ['All', 'Architecture', 'Interior Design', 'Exterior Design', 'Concept to Completion']

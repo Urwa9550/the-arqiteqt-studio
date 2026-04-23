@@ -1,4 +1,5 @@
 import './HowWeDoIt.css'
+import teamwork from '../assets/images/teamwork.jpeg'
 
 const PILLARS = [
   {
@@ -6,7 +7,7 @@ const PILLARS = [
     title: 'Teamwork & Trust',
     subtitle: 'A safe pair of hands',
     body: 'We believe great architecture is born from great relationships. Every project begins with listening — understanding your vision, your lifestyle, and your aspirations. You will always have direct access to the principals leading your project.',
-    image: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=900&q=80',
+    image: teamwork,
   },
   {
     number: '02',

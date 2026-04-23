@@ -1,4 +1,7 @@
 import './AboutUs.css'
+import SUMAIN01 from '../assets/images/sumain.jpeg'
+import Interior9 from '../assets/images/interior/st01.png'
+import Exterior8 from '../assets/images/exterior/residential.jpg'
 
 export default function AboutUs() {
   return (
@@ -41,7 +44,7 @@ export default function AboutUs() {
           <div className="about__right fade-in">
             <div className="about__img-grid">
               <img
-                src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=700&q=80"
+                src={SUMAIN01}
                 alt="Studio at work"
                 width={700}
                 height={900}
@@ -50,7 +53,7 @@ export default function AboutUs() {
                 className="about__img about__img--tall"
               />
               <img
-                src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?w=700&q=80"
+                src={Interior9}
                 alt="Design process"
                 width={700}
                 height={460}
@@ -59,7 +62,7 @@ export default function AboutUs() {
                 className="about__img"
               />
               <img
-                src="https://images.unsplash.com/photo-1505691938895-1758d7feb511?w=700&q=80"
+                src={Exterior8}
                 alt="Completed project"
                 width={700}
                 height={460}

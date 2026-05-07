@@ -67,11 +67,23 @@ export default function Contact() {
     setIsLoading(true)
 
     try {
-      // Simulate API call - replace with your actual endpoint
-      await new Promise(resolve => setTimeout(resolve, 1000))
-
-      // Here you would typically send the data to your backend
+      // Format the message for WhatsApp
+      const whatsappMessage = `Hello! I have a project inquiry:\n\n*Name:* ${formData.name}\n*Email:* ${formData.email}\n*Project Type:* ${formData.project || 'Not specified'}\n*Message:* ${formData.message}`
+      
+      // WhatsApp number (country code + number without spaces or special characters)
+      const whatsappNumber = '447404509043'
+      
+      // Encode the message for URL
+      const encodedMessage = encodeURIComponent(whatsappMessage)
+      
+      // Create WhatsApp URL
+      const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`
+      
+      // Log for debugging
       console.log('Form submitted:', formData)
+
+      // Open WhatsApp
+      window.open(whatsappUrl, '_blank')
 
       setSent(true)
       setFormData({ name: '', email: '', project: '', message: '' })

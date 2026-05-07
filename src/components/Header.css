@@ -37,6 +37,13 @@
   flex-shrink: 0;
 }
 
+.header__logo-img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
 .header--dark-bg .header__logo {
   color: black;
 }

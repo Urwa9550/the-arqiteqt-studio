@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import './Header.css'
+import Logo from '../assets/images/logo1.png'
 
 const NAV_LINKS = [
   { label: 'Home', path: '/' },
@@ -37,13 +38,9 @@ export default function Header() {
   return (
     <header className={`header${scrolled ? ' header--scrolled' : ''}${isDarkBg ? ' header--dark-bg' : ''}`} role="banner">
       <div className="header__inner container">
-        {/* SVG Logo Mark */}
+        {/* Logo */}
         <Link to="/" className="header__logo" aria-label="The Arqiteqt – Home">
-          <svg width="36" height="36" viewBox="0 0 36 36" fill="none" aria-hidden="true">
-            <path d="M18 3 L33 33 H3 Z" stroke="currentColor" strokeWidth="1.5" fill="none"/>
-            <line x1="18" y1="3" x2="18" y2="33" stroke="currentColor" strokeWidth="0.8" opacity="0.4"/>
-            <line x1="3" y1="33" x2="33" y2="33" stroke="currentColor" strokeWidth="1.5"/>
-          </svg>
+          <img src={Logo} alt="The Arqiteqt Logo" className="header__logo-img" />
           <span className="header__brand">
             <span className="header__name">The Arqiteqt</span>
             <span className="header__caption">The Architectural Studio</span>

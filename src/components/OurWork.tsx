@@ -41,6 +41,19 @@ import Arch10 from '../assets/images/architecture/museum01.jpg'
 import Arch11 from '../assets/images/architecture/museum02.jpg'
 import Arch12 from '../assets/images/architecture/resturant01.jpg'
 import Arch13 from '../assets/images/architecture/resturant02.jpg'
+// Exhibition images
+import Exhibition1 from '../assets/images/exhibition/1.jpeg'
+import Exhibition2 from '../assets/images/exhibition/2.jpeg'
+import Exhibition3 from '../assets/images/exhibition/3.png'
+import Exhibition4 from '../assets/images/exhibition/4.png'
+import Exhibition5 from '../assets/images/exhibition/5.jpeg'
+import Exhibition6 from '../assets/images/exhibition/6.jpeg'
+import Exhibition7 from '../assets/images/exhibition/7.jpeg'
+import Exhibition8 from '../assets/images/exhibition/8.jpeg'
+import Exhibition9 from '../assets/images/exhibition/9.jpeg'
+import Exhibition10 from '../assets/images/exhibition/10.jpeg'
+import Exhibition11 from '../assets/images/exhibition/11.jpeg'
+
 
 
 
@@ -84,9 +97,20 @@ const PROJECTS = [
   { id: 35, title: 'Mayfair Penthouse', category: 'Interior Design', image: Interior8 },
   { id: 36, title: 'Mayfair Penthouse', category: 'Interior Design', image: Interior9 },
   { id: 37, title: 'Mayfair Penthouse', category: 'Interior Design', image: Interior10 },
+  { id: 38, title: 'Mayfair Penthouse', category: 'Exhibition', image: Exhibition1 },
+  { id: 39, title: 'Mayfair Penthouse', category: 'Exhibition', image: Exhibition2 },
+  { id: 40, title: 'Mayfair Penthouse', category: 'Exhibition', image: Exhibition3 },
+  { id: 41, title: 'Mayfair Penthouse', category: 'Exhibition', image: Exhibition4 },
+  { id: 42, title: 'Mayfair Penthouse', category: 'Exhibition', image: Exhibition5 },
+  { id: 43, title: 'Mayfair Penthouse', category: 'Exhibition', image: Exhibition6 },
+  { id: 44, title: 'Mayfair Penthouse', category: 'Exhibition', image: Exhibition7 },
+  { id: 45, title: 'Mayfair Penthouse', category: 'Exhibition', image: Exhibition8 },
+  { id: 46, title: 'Mayfair Penthouse', category: 'Exhibition', image: Exhibition9 },
+  { id: 47, title: 'Mayfair Penthouse', category: 'Exhibition', image: Exhibition10 },
+  { id: 48, title: 'Mayfair Penthouse', category: 'Exhibition', image: Exhibition11 },
 ]
 
-const CATEGORIES = ['All', 'Architecture', 'Interior Design', 'Exterior Design', 'Concept to Completion']
+const CATEGORIES = ['All', 'Architecture', 'Interior Design', 'Exterior Design', 'Concept to Completion', 'Exhibition']
 
 export default function OurWork() {
   const [active, setActive] = useState('All')
